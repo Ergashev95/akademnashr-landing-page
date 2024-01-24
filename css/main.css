@@ -125,3 +125,41 @@ body {
 }
 
 /* SITE-HEADER */
+
+/* SITE-HERO */
+.site-hero {
+    background-color: var(--dark);
+}
+
+.site-hero__desc {
+}
+.site-hero__title {
+    max-width: 339px;
+    width: 100%;
+    font-family: var(--robotocondensed);
+    color: var(--white);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.5px;
+}
+.site-hero__text {
+    max-width: 387px;
+    width: 100%;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    color: var(--white);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .5px;
+}
+
+
+.site-hero__image {
+    width: 510px;
+    height: 510px;
+    border-radius: 8px;
+    transform: translateY(40px);
+    box-shadow: 24px 24px 0px 0px rgba(255, 117, 0, 0.60);
+}
+/* SITE-HERO */
