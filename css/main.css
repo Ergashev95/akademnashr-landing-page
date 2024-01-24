@@ -1,40 +1,127 @@
 @import url(./fonts.css);
 
-
 /* CUSTOM PROPS */
 :root {
-    --primary-orange: #FF7500;
-    --white: #fff;
-    --dark: #252420;
-    --roboto: 'Roboto';
-    --robotocondensed: 'RobotoCondensed';
+  --primary-orange: #ff7500;
+  --white: #fff;
+  --dark: #252420;
+  --roboto: "Roboto";
+  --robotocondensed: "RobotoCondensed";
 }
 
 /* GLOBAL STYLES */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
+}
+
+.all-btn {
+  padding: 12px 24px;
+  background-color: var(--primary-orange);
+  border-radius: 4px;
+  font-family: var(--roboto);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--white);
+  transition: 0.4s;
+}
+.all-btn:hover {
+  opacity: 0.8;
+}
+.all-btn:active {
+  opacity: 0.6;
 }
 
 /* CONTAINER SIZE */
 
 .container {
-    width: 1130px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: auto;
+  width: 1130px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
 }
-
 
 body {
-    font-family: var(--roboto);
+  font-family: var(--roboto);
 }
+
+/* SITE-HEADER */
+.site-line {
+  width: 100%;
+  height: 5px;
+  background-color: var(--primary-orange);
+}
+.site-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+.logo-image {
+  width: 38px;
+  height: 59px;
+  object-fit: cover;
+}
+.logo-name {
+  color: var(--dark);
+  font-size: 32px;
+  font-weight: 700;
+  font-family: var(--robotocondensed);
+}
+.logo-name::after {
+  content: "nashr";
+  color: var(--primary-orange);
+}
+.header-list {
+  display: flex;
+  column-gap: 32px;
+}
+.header-link {
+  color: #000;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.header-link:hover {
+  color: var(--primary-orange);
+}
+.header-link:active {
+  opacity: 0.6;
+}
+
+.header-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: var(--primary-orange);
+    transition: .5s;
+}
+.header-link:hover::after {
+    width: 100%;
+}
+
+/* SITE-HEADER */
