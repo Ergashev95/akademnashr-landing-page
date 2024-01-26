@@ -131,8 +131,6 @@ body {
     background-color: var(--dark);
 }
 
-.site-hero__desc {
-}
 .site-hero__title {
     max-width: 339px;
     width: 100%;
@@ -142,6 +140,16 @@ body {
     font-weight: 700;
     line-height: 48px;
     letter-spacing: 0.5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+.site-hero__title::before {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-orange);
 }
 .site-hero__text {
     max-width: 387px;
